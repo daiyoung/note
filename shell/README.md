@@ -16,7 +16,7 @@
 | $?   | 上个命令的退出状态，或函数的返回值。|
 | $$   | 当前Shell进程ID。对于 Shell 脚本，就是这些脚本所在的进程ID。|
 ### examples
-    [root@registry tmp]# sh test.sh 1 2 3 4 5 6
+    [root@registry tmp]# sh param.sh 1 2 3 4 5 6
     $0:  test.sh
     $2:  2
     $#:  6
