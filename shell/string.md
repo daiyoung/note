@@ -14,3 +14,30 @@ name=/usr/local/bin/readme.txt.bak
 | ${name##\*.} | 匹配最后一个'.'后面的\*  | bak                          |
 | ${name#\*/}  | 匹配第一个'/'后面的\*    | usr/local/bin/readme.txt.bak |
 | ${name##\*/} | 匹配最后一个'/'后面的\*  | readme.txt.bak               |
+
+
+## examples
+
+### check prefix
+
+```shell
+if [[ "$msg" =~ "Already" ]];then
+  exit 0
+fi
+
+#https://majing.io/posts/10000006301174
+str="hello"
+if [[ $str == h* ]];then
+    echo 'yes'
+fi
+
+str="hello"
+if [[ "$str" =~ ^he.* ]]; then
+    echo "yes"
+fi
+
+```
+
+### upper to lower
+
+    uuidgen | sed "s/-//g" | tr [A-Z] [a-z]
