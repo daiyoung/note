@@ -24,9 +24,7 @@
     　　-n　　-n str1　　　　字符串长度是否不等于0
     　　-z　　-z str2　　　　字符串长度是否等于0
     
-    if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then
-        export KAFKA_HEAP_OPTS="-Xmx1G -Xms1G"
-    fi
+
 
 文件判断
 

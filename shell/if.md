@@ -27,6 +27,11 @@ if [ $? -eq 0 ];then
         exit
     fi
 fi
+
+# string compare
+if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then
+    export KAFKA_HEAP_OPTS="-Xmx1G -Xms1G"
+fi
 ```
 ### case...esac	
 ``` shell
