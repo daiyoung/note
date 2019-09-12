@@ -3,6 +3,20 @@
 ## uuid
     cat /proc/sys/kernel/random/uuid
 
+## 命令行修改passwd
+
+centos
+
+    echo "hek369" | passwd root --stdin > /dev/null 2>&1
+    
+    #or
+    
+    echo "hek0517" | passwd root --stdin
+
+debian
+
+    echo 'pi:PASSWD' | chpasswd
+
 ## examples
 ```shell
 #!/bin.bash
