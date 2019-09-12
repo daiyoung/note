@@ -27,13 +27,13 @@ fi
 
 #https://majing.io/posts/10000006301174
 str="hello"
-if [[ $str == h* ]];then
-    echo 'yes'
+if [[ "$str" == h* ]]; then
+    echo "yes"
 fi
 
 str="hello"
-if [[ "$str" =~ ^he.* ]]; then
-    echo "yes"
+if [[ "$str" =~ ^he.* ]]; then
+    echo "yes"
 fi
 
 ```
