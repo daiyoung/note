@@ -9,7 +9,7 @@
 if [ $month -eq 4 ] || [ $month -eq 6 ] || [ $month -eq 9 ] || [ $month -eq 11 ];then #	有中括号要用到 || &&
     day=30;	#if用于有大代码块的判断
 elif [ ... ]; then
-	if [[ -z "$1" ]]; then
+    if [[ -z "$1" ]]; then
         echo "image name is null"
     fi
 else
